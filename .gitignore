@@ -1,0 +1,9 @@
+.idea/*
+
+venv/*
+
+*.sqlite3
+
+# python cache files
+__pycache__/
+*.pyc

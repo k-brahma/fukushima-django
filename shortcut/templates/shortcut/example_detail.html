@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <p>{{ object.operation }}</p>
+    <p>{{ object.result }}</p>
+    <p>{{ object.description|linebreaksbr }}</p>
+</div>
+<div>
+    <a href="{% url 'shortcut:example_update' object.pk %}">編集</a>
+    <a href="{% url 'shortcut:example_delete' object.pk %}">削除</a>
+    <a href="{% url 'shortcut:example_list' %}">一覧</a>
+</div>
+</body>
+</html>
